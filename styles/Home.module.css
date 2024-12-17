@@ -851,43 +851,19 @@
   z-index: 92;
 }
 
-/* Estilos para o container que engloba os botões e o ConnectEmbed */
-.loginOptions {
-  display: flex;
-  flex-direction: column; /* Alinha verticalmente */
-  align-items: center; /* Centraliza horizontalmente */
-  gap: 1rem; /* Espaçamento entre os elementos */
-  padding: 1%; /* Espaçamento interno */
-  border: 1px solid #ccc; /* Borda (opcional) */
-  border-radius: 8px; /* Borda arredondada (opcional) */
-  background-color: #000000b8; /* Cor de fundo (opcional) */
-  width: 100%; /* Garante que ocupe toda a largura do container pai */
-  max-width: 400px; /* Define uma largura máxima para evitar que fique muito largo em telas grandes */
-  margin: 1rem auto; /* Centraliza horizontalmente e adiciona margem superior e inferior */
+/* styles/Home.module.css */
+.connectWalletButton {
+  background-color: #007bff; /* Cor de fundo azul */
+  color: white; /* Cor do texto branco */
+  padding: 10px 20px; /* Espaçamento interno */
+  border: none; /* Remove a borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mãozinha ao passar o mouse */
+  font-size: 16px;
 }
 
-/* Estilos para o botão ConnectWalletButton */
-.metamaskButton {
-  /* Seus estilos existentes para o botão */
-  width: 100%;
-  max-width: 350px; /* Largura máxima para o botão */
-  padding: 1rem 2rem; /* Ajuste o padding para o tamanho desejado */
-  font-size: 1rem; /* Tamanho da fonte */
-  background-color: #3b82f6; /* Cor de fundo laranja */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Transição suave na cor de fundo */
+.connectWalletButton:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura no hover */
 }
 
-.metamaskButton:hover {
-  background-color: #d47e1f; /* Cor de fundo mais escura no hover */
-}
-
-/* Estilos para o ConnectEmbed para que ocupe a largura e se alinhe corretamente */
-.loginOptions > div:first-child {
-  width: 100%;
-  max-width: 350px;
-  margin-bottom: 1rem;
-}
+/* ... outros estilos */
